@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+	<title>Grid Layout Practice</title>
+</head>
+<body>
+	<div style="
+		display: grid;
+		grid-template-columns: 100px 100px;">
+		<div style = "background-color: lightblue;">
+			div1
+		</div>
+		<div style = "background-color: rgb(249, 205, 188);">
+			div2
+			<p>
+				text
+			</p>
+		</div>
+	</div>
+
+	<div style="
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 100px 100px 200px;">
+		<div style = "background-color: lightblue;">
+			100px
+		</div>
+		<div style = "background-color: rgb(249, 205, 188);">
+			100px
+			<p>
+				text
+			</p>
+		</div>
+		<div style = "background-color: rgb(126, 223, 70);">
+			200px
+		</div>
+	</div>
+	<div style="
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 100px 1fr 2fr;">
+		<div style = "background-color: lightblue;">
+			100px
+		</div>
+		<div style = "background-color: rgb(249, 205, 188);">
+			1fr
+			<p>
+				text
+			</p>
+		</div>
+		<div style = "background-color: rgb(126, 223, 70);">
+			2fr
+		</div>
+	</div>
+</body>
