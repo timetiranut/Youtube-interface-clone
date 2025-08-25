@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="styles/sidebar.css">
 	</head>
 	<body>
-		<div class = "header">
+		<header class = "header">
 			<div class="left-section">
 				<img class = "hamburger-menu" src = "icon/hamburger-menu.svg">
 				<img class = "youtube-logo"src = "icon/youtube-logo.svg">
@@ -20,162 +20,277 @@
 				<input class = "serach-bar" type="text" placeholder = "Search"> 
 				<button class = "search-button">
 					<img  class = "search-icon" src = "icon/search.svg">
+					<div class = "tooltip">Search</div>
 				</button>
+				<!-- Comment -->
 				<button class = "void-search-button">
 					<img class = "voice-search-icon" src = "icon/voice-search-icon.svg">
+					<div class = "tooltip">Search with your voice</div>
 				</button>
 			</div>
 			<div class="right-section">
-				<img class = "upload-icon" src = "icon/upload.svg">
+				<div class = "upload-icon-container">
+					<img class = "upload-icon" src = "icon/upload.svg">
+					<div class = "tooltip">Create</div>
+				</div>
+				
 				<img class = "youtube-apps-icon" src = "icon/youtube-apps.svg">
-				<img class = "notifications-icon" src = "icon/notifications.svg">
+				<div class = "notfication-icon-container">
+					<img class = "notifications-icon" src = "icon/notifications.svg">
+					<div class = "notifications-count">9+</div>
+				</div>
 				<img class = "current-user-picture" src = "channel-picture/my-channel.jpeg">
-			</div>
+			</header>
 			
 		</div>
 
-		<div class = "sidebar">
-			sidebar
-		</div>
-		<div class = "video-grid">
-			<div class = "video-preview">
-				<div class = "thumbnail-rows">
-					<img class = "thumbnail" 
-					src="thumbnails/hq720.avif">
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-						<img class = "profile-picture" 
-						src = "channel-picture/channels1_profile.jpg">
-					</div>
-					<div class = "video-info">
-						<p class="video-title">
-							EP.37 หุ้นอเมริกาจะไม่ไปไหน 10 ปี + Klarna IPO + FED แถลงการ + Wiz ถูก Google ซื้อ
-						</p>
-						<p class = "video-author">
-							สามหนุ่มหุ้นนอก
-						</p>
-						<p class = video-stats>
-							3.1K views &middot; 5 months ago
-					</div>
-				</div>
+		<nav class = "sidebar">
+			<div class = "side-bar-link">
+				<img src = "icon/home.svg">
+				<div>Home</div>
 			</div>
+			<div class = "side-bar-link">
+				<img src = "icon/explore.svg">
+				<div>Explore</div>
+			</div>
+			<div class = "side-bar-link">
+				<img src = "icon/subscriptions.svg">
+				<div>Subscriptions</div>
+			</div>
+			<div class = "side-bar-link">
+				<img src = "icon/originals.svg">
+				<div>Originals</div>
+			</div>
+			<div class = "side-bar-link">
+				<img src = "icon/youtube-music.svg">
+				<div>YouTube Music</div>
+			</div>
+			<div class = "side-bar-link">
+				<img src = "icon/library.svg">
+				<div>Library</div>
+			</div>
+		</nav>
+		<main> 
+			<div class = "video-grid">
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" 
+						src="thumbnails/hq720.avif">
+						<div class = "video-time"> 1:30:06 </div>
+					</div>
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/channels1_profile.jpg">
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								EP.37 หุ้นอเมริกาจะไม่ไปไหน 10 ปี + Klarna IPO + FED แถลงการ + Wiz ถูก Google ซื้อ
+							</p>
+							<p class = "video-author">
+								สามหนุ่มหุ้นนอก
+							</p>
+							<p class = video-stats>
+								3.1K views &middot; 5 months ago
+						</div>
+					</div>
+				</div>
+		
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" src="thumbnails/hq721.avif">
+						<div class = "video-time"> 1:30:06 </div>
+					</div>
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/channels4_profile.jpg">
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								ร้านประจำ หม่ำ จ๊กมก
+							</p>
+							<p class = "video-author">
+								tigercrychannel
+							</p>
+							<p class = video-stats>
+								2.2M views &middot; 2 years ago
+						</div>
+					</div>
+					</p>
+				</div>
+		
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" 
+						src="thumbnails/hq122.avif">
+						<div class = "video-time"> 1:30:06 </div>
+					</div>
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/channels3_profile.jpg">
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								The Easy Way to Build Responsive Websites
+							</p>
+							<p class = "video-author">
+								Sajid
+							</p>
+							<p class = video-stats>
+								99K views &middot; 3 months ago
+						</div>
+					</div>
+				</div>
+		
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" src="thumbnails/hq723.avif">
+						<div class = "video-time"> 1:30:06 </div>
+					</div>
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/unnamed.jpg">
+							
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								ครูเอิร์น จากครูผู้ดูแลเด็กพิเศษ สู่การค้นพบว่าตัวเองก็เป็น Asperger Syndrome
+							</p>
+							<p class = "video-author">
+								Doctor Tanny
+							</p>
+							<p class = video-stats>
+								138K views &middot; 5 days ago
+						</div>
+					</div>
+					</p>
+				</div>
 	
-			<div class = "video-preview">
-				<div class = "thumbnail-rows">
-					<img class = "thumbnail" src="thumbnails/hq721.avif">
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-						<img class = "profile-picture" 
-						src = "channel-picture/channels4_profile.jpg">
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" 
+						src="thumbnails/hqdefault.avif">
+						<div class = "video-time"> 1:30:06 </div>
 					</div>
-					<div class = "video-info">
-						<p class="video-title">
-							ร้านประจำ หม่ำ จ๊กมก
-						</p>
-						<p class = "video-author">
-							tigercrychannel
-						</p>
-						<p class = video-stats>
-							2.2M views &middot; 2 years ago
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/channels2_profile.jpg">
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								The Secret Psychology of Winning Investors Part 2
+							</p>
+							<p class = "video-author">
+								Adam Khoo
+							</p>
+							<p class = video-stats>
+								22K views &middot; 2 years ago
+						</div>
 					</div>
 				</div>
-				</p>
-			</div>
 	
-			<div class = "video-preview">
-				<div class = "thumbnail-rows">
-					<img class = "thumbnail" 
-					src="thumbnails/hq122.avif">
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-						<img class = "profile-picture" 
-						src = "channel-picture/channels3_profile.jpg">
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" 
+						src="thumbnails/hq724.avif">
+						<div class = "video-time"> 1:30:06 </div>
 					</div>
-					<div class = "video-info">
-						<p class="video-title">
-							The Easy Way to Build Responsive Websites
-						</p>
-						<p class = "video-author">
-							Sajid
-						</p>
-						<p class = video-stats>
-							99K views &middot; 3 months ago
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/channels6_profile.jpg">
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								Bitkub Meetup ครั้งที่ 7 | เซสชัน The Unicorns
+							</p>
+							<p class = "video-author">
+								ToppJirayut
+							</p>
+							<p class = video-stats>
+								2,729 views &middot; 3 hours ago
+						</div>
 					</div>
 				</div>
-			</div>
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" src="thumbnails/hq723.avif">
+						<div class = "video-time"> 1:30:06 </div>
+					</div>
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/unnamed.jpg">
+							
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								ครูเอิร์น จากครูผู้ดูแลเด็กพิเศษ สู่การค้นพบว่าตัวเองก็เป็น Asperger Syndrome
+							</p>
+							<p class = "video-author">
+								Doctor Tanny
+							</p>
+							<p class = video-stats>
+								138K views &middot; 5 days ago
+						</div>
+					</div>
+					</p>
+				</div>
 	
-			<div class = "video-preview">
-				<div class = "thumbnail-rows">
-					<img class = "thumbnail" src="thumbnails/hq723.avif">
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-						<img class = "profile-picture" 
-						src = "channel-picture/unnamed.jpg">
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" 
+						src="thumbnails/hqdefault.avif">
+						<div class = "video-time"> 1:30:06 </div>
 					</div>
-					<div class = "video-info">
-						<p class="video-title">
-							ครูเอิร์น จากครูผู้ดูแลเด็กพิเศษ สู่การค้นพบว่าตัวเองก็เป็น Asperger Syndrome
-						</p>
-						<p class = "video-author">
-							Doctor Tanny
-						</p>
-						<p class = video-stats>
-							138K views &middot; 5 days ago
-					</div>
-				</div>
-				</p>
-			</div>
-
-			<div class = "video-preview">
-				<div class = "thumbnail-rows">
-					<img class = "thumbnail" 
-					src="thumbnails/hqdefault.avif">
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-						<img class = "profile-picture" 
-						src = "channel-picture/channels2_profile.jpg">
-					</div>
-					<div class = "video-info">
-						<p class="video-title">
-							The Secret Psychology of Winning Investors Part 2
-						</p>
-						<p class = "video-author">
-							Adam Khoo
-						</p>
-						<p class = video-stats>
-							22K views &middot; 2 years ago
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/channels2_profile.jpg">
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								The Secret Psychology of Winning Investors Part 2
+							</p>
+							<p class = "video-author">
+								Adam Khoo
+							</p>
+							<p class = video-stats>
+								22K views &middot; 2 years ago
+						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class = "video-preview">
-				<div class = "thumbnail-rows">
-					<img class = "thumbnail" 
-					src="thumbnails/hq724.avif">
-				</div>
-				<div class="video-info-grid">
-					<div class="channel-picture">
-						<img class = "profile-picture" 
-						src = "channel-picture/channels6_profile.jpg">
+	
+				<div class = "video-preview">
+					<div class = "thumbnail-rows">
+						<img class = "thumbnail" 
+						src="thumbnails/hq724.avif">
+						<div class = "video-time"> 1:30:06 </div>
 					</div>
-					<div class = "video-info">
-						<p class="video-title">
-							Bitkub Meetup ครั้งที่ 7 | เซสชัน The Unicorns
-						</p>
-						<p class = "video-author">
-							ToppJirayut
-						</p>
-						<p class = video-stats>
-							2,729 views &middot; 3 hours ago
+					<div class="video-info-grid">
+						<div class="channel-picture">
+							<img class = "profile-picture" 
+							src = "channel-picture/channels6_profile.jpg">
+						</div>
+						<div class = "video-info">
+							<p class="video-title">
+								Bitkub Meetup ครั้งที่ 7 | เซสชัน The Unicorns
+							</p>
+							<p class = "video-author">
+								ToppJirayut
+							</p>
+							<p class = video-stats>
+								2,729 views &middot; 3 hours ago
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
+		
 		
 	</body>
 </html>
